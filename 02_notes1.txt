@@ -1,0 +1,32 @@
+1. Asymptotic Notation Analysis : It used to find the time complexity.
+    We will be comparing or judging the algorithm based on :
+        a) No. of Operations   
+        b) No. of operations w.r.t chnage in input.
+        c) How much instruction or operation chnaging when input is changing
+
+2. Rules of Big(0) Notation to find Time complexity :
+    i) Nested Loops are multiplied together
+    ii) Sequential Loops are added.
+    iii) Larger term will be kept and smaller will be droped.
+    iv) Conditionals checks are constant.
+    v) constant are dropped.
+
+3. Increase in the time complexity of Notation :
+    O(1) < O(logn) < O(root(n)) < O(n) < O(nlogn) < O(n^2) < O(n^3) < O(2^n) < O(n!) < O(n^n)
+
+4. Optimised Approach means : when we increase the input size even then there is not increase in time limit or number of operations. i.e slow growth : growth means change in the input size leads to change in no. of operations. so those operations which have less or slow growth then that one is optimzed aaproach and that algo perform better.
+
+5. Types of complexity :
+    i) Worst case T.C : denoted as Big O Notation (upper bound) -> Worst case scenario
+    ii) Best case T.C : denoted as Big Omega Notation (Lower bound) -> Best case scenario
+    iii) Average case T.C : denoted as Big Thetha (Tight bound) -> Average case scenario
+
+6. Space complexity ;
+    i) It is the extra memory space requirement of an algorithm. using Asymptotic Analysis.
+    ii) And extra space is going to be loaded in the ram. The program which we are excuting they are loaded into the ram and aprocess get created. so how much space it is taking to load a program while running the program into tht ram it is kown as space complexity.
+
+7. Way to determine the space complexity :
+    i) It doesn't depend upon or consider  the input and output format.
+    ii) With respect to input there is change in space then we will consider that extra space meemory.
+    ii) In space we consider those thing which can increase the space by adding extra data structure or any algorithm but not based on input and output. It basically based on chnaging the input size the array size also get changed then there is space complexity.
+    iv) So wehn we add new data structure like array or stack or something that then space complexity get increase.

@@ -1,0 +1,31 @@
+1. In this we will talk about the time and space complexity.
+2. Let assume we have two number x,y and range is 1<=x<=10^5 and x<=y<=10^8 and we have to calculate the sum of number between [x,y] inclusive.
+3. eg : [2,6] = 2+3+4+5+6 = 20 
+4. One way to solve this problem is :
+
+int sum = 0;
+for(int i=x;i<=y;i++)
+{
+    sum+=i;
+}
+return sum;
+
+    we have to iterate that much time to solve this queston. 
+
+5. But if we talk about the optimized sollution then we can also solve this question using mathematics.
+let say 
+
+sum of n natural number = n/2(2a + (n-1)*d );
+n = y-x+1; -> 6-2+1 = 5
+a = x; -> 2
+d = 1; 
+result = 5/2(2*2 + 4) = 5/2*8 => 20;
+
+So conclusion is that see that for adding large amount of number let say in 10^3 we have to iterate the loop in those number of times and here we done this solltuin using the formuala only so here redueced the for loop even so this is the optimized solltuion. that is why time and space complexity is very much important.
+
+6. In case of time complexity analysis we never take experimental analysis into consideration. why beacuse it changes according to the processor, and we don't know how much task or processor is running in the background.
+
+7. We analysis the complexity on the basis of number of operations or instructions. 
+Let assume we don't know a system will take how much time to exucute one operations but if one algo is taking 10^4 operation and another algo is taking only 10 operation to perform task on the same systme so algo2 is much faster then algo1. So if we can reduece the number of operations then it is good.
+
+8. So apart from experimental analysis we have introduced Asymptotic analysis: 
